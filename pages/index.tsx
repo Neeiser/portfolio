@@ -10,7 +10,6 @@ export default function Home() {
   return (
     <div>
       <main className=' font-InterRegular bg-fixed bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-gray-700 via-gray-800 to-black'>
-        
         <section className='h-screen'>
           <div className='h-screen flex'>
             <div className='w-3/5 flex flex-col justify-center'>

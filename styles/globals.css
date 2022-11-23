@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html,
 body {
   padding: 0;
@@ -15,12 +19,27 @@ a {
   box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+@font-face{
+  font-family: 'OpenSans';
+  src: url(../public/font/OpenSans.ttf);
+}
+
+@font-face{
+  font-family: 'KanitBoldItalic';
+  src: url(../public/font/Kanit-BoldItalic.ttf);
+}
+
+@font-face{
+  font-family: 'MontserratRegular';
+  src: url(../public/font/MontserratRegular.ttf);
+}
+
+@font-face{
+  font-family: 'PermanentMarkerRegular';
+  src: url(../public/font/PermanentMarkerRegular.ttf);
+}
+
+@font-face{
+  font-family: 'InterRegular';
+  src: url(../public/font/Inter-Regular.ttf);
 }

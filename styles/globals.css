@@ -2,45 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+html{
   scroll-behavior: smooth;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border: none;
+  border-bottom: 1px solid #d1d5db;
+  -webkit-text-fill-color: #d1d5db;
+  -webkit-box-shadow: 0 0 0px 1000px transparent inset;
+  transition: background-color 5000s ease-in-out 0s;
 }
 
-* {
-  box-sizing: border-box;
-}
 
-@font-face{
-  font-family: 'OpenSans';
-  src: url(../public/font/OpenSans.ttf);
-}
-
-@font-face{
-  font-family: 'KanitBoldItalic';
-  src: url(../public/font/Kanit-BoldItalic.ttf);
-}
-
-@font-face{
-  font-family: 'MontserratRegular';
-  src: url(../public/font/MontserratRegular.ttf);
-}
-
-@font-face{
-  font-family: 'PermanentMarkerRegular';
-  src: url(../public/font/PermanentMarkerRegular.ttf);
-}
-
-@font-face{
-  font-family: 'InterRegular';
-  src: url(../public/font/Inter-Regular.ttf);
-}

@@ -8,7 +8,7 @@ import neeiserLogo from '../public/assets/img/neeiser-logo.png';
 export default function Home() {
   return (
     <div>
-      <main className='font-InterRegular bg-fixed bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-gray-700 via-gray-800 to-black'>
+      <main className=' bg-fixed bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-gray-700 via-gray-800 to-black'>
         <section className='h-screen relative'>
           <div className='h-screen flex'>
             <div className='w-full flex flex-col justify-center items-center text-gray-200'>
@@ -29,9 +29,9 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className='h-screen z-0 font-InterRegular' id="about">
-          <div className='h-screen w-4/6 mx-auto rounded-3xl bg-gray-700/50 px-16 flex flex-col justify-evenly'>
-            <h1 className='text-center text-4xl italic font-bold text-orange-500'>About Me</h1>
+        <section className='h-screen z-0' id="about">
+          <div className='h-screen w-4/6 mx-auto rounded-3xl bg-gray-700/50 px-16 flex flex-col justify-evenly py-10'>
+            <h1 className='text-center text-4xl font-bold text-orange-500'>About Me</h1>
             <div className='relative w-1/2 h-1/4 bg-gray-800 rounded-xl group shadow-2xl overflow-hidden'>
               <div className='absolute flex w-full h-full items-center justify-center group-hover:translate-x-full transition duration-1000 ease-in-out rounded-xl'>
                 <h2 className='font-bold text-2xl text-orange-500'>Chi sono</h2>

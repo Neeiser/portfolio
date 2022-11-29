@@ -7,9 +7,15 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        orangeOW: '#f99e1a',
+        grayOW: '#43484c',
+        blueOW: '#405275',
+        lightBlueOW: '#218ffe',
+        blackOW:'#181818'
+      },
       fontFamily:{
-        OpenSans: 'OpenSans',
-        InterRegular: 'InterRegular',
+        
       },
     },
   },

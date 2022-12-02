@@ -5,10 +5,25 @@ const inter = Inter({ subsets: ['latin'] })
 //COMPONENTS
 import Head from 'next/head';
 import Layout from '../components/Layout';
+import { useEffect } from "react";
 
 import type { AppProps } from 'next/app'
 
 export default function App({ Component, pageProps }: AppProps) {
+  useEffect(() => {
+    const threeScript = document.createElement("script");
+    threeScript.setAttribute("id", "threeScript");
+    threeScript.setAttribute(
+      "src",
+      "https://cdnjs.cloudflare.com/ajax/libs/three.js/r122/three.min.js"
+    );
+    document.getElementsByTagName("head")[0].appendChild(threeScript);
+    return () => {
+      if (threeScript) {
+        threeScript.remove();
+      }
+    };
+  }, []);
   return (
     <div className={inter.className}>
       <Head>

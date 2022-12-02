@@ -8,30 +8,30 @@ import LinkedIn from "../public/assets/logos/social/icons8-linkedin-circled-250.
 
 export default function Contact() {
     return (
-        <section className='h-full relative bg-fixed bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-gray-700 via-gray-800 to-black'>
+        <section className='h-full relative bg-bgMain'>
             <div className="flex flex-col h-full w-full justify-center pt-40">
                 <form action="https://formsubmit.co/stortini.work@gmail.com" method="POST">
-                    <div className="flex flex-col w-2/4 p-12 mx-auto bg-gray-800/70 rounded-3xl shadow-xl backdrop-blur-lg">
+                    <div className="flex flex-col w-2/4 p-12 mx-auto bg-gray-300/50 rounded-3xl shadow-xl backdrop-blur-sm">
 
                         <motion.div animate={{ x: 0, opacity: 1}} initial={{ x: 200, opacity: 0}} transition={{ delay: 0.2}}  className=" w-full py-6">
-                            <h1 className="text-2xl text-orangeOW pl-4">Name</h1>
-                            <input className="w-full focus:outline-none bg-transparent p-4 text-gray-300" type="text" name="name" placeholder="Your Name" required/>
+                            <h1 className="text-2xl text-blackOW font-semibold pl-4">Name</h1>
+                            <input className="w-full focus:outline-none bg-transparent p-4 text-blackOW italic" type="text" name="name" placeholder="Your Name" required/>
                             <div className=" w-4 h-1 border-b-2 ml-4 border-blue-100">
 
                             </div>
                         </motion.div>
 
                         <motion.div animate={{ x: 0, opacity: 1}} initial={{ x: 200, opacity: 0}} transition={{ delay: 0.4}} className=" w-full py-6">
-                            <h1 className="text-2xl text-orangeOW pl-4">Email</h1>
-                            <input className="w-full focus:outline-none bg-transparent p-4 text-gray-300" type="email" name="email" placeholder="Your Email" required/>
+                            <h1 className="text-2xl text-blackOW font-semibold pl-4">Email</h1>
+                            <input className="w-full focus:outline-none bg-transparent p-4 text-blackOW italic" type="email" name="email" placeholder="Your Email" required/>
                             <div className=" w-4 h-1 border-b-2 ml-4 border-blue-100">
 
                             </div>
                         </motion.div>
 
                         <motion.div animate={{ x: 0, opacity: 1}} initial={{ x: 200, opacity: 0}} transition={{ delay: 0.6}}  className=" w-full py-6">
-                            <h1 className="text-2xl text-orangeOW pl-4">Message</h1>
-                            <textarea className="w-full focus:outline-none bg-transparent p-4 text-gray-300" name="message" placeholder="Leave a message..." required/>
+                            <h1 className="text-2xl text-blackOW font-semibold pl-4">Message</h1>
+                            <textarea className="w-full focus:outline-none bg-transparent p-4 text-blackOW italic" name="message" placeholder="Leave a message..." required/>
                             
                             <div className=" w-4 h-1 border-b-2 ml-4 border-blue-100">
 

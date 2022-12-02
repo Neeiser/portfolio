@@ -9,7 +9,7 @@ import Link from "next/link";
 export default function Navbar() {
     return (
         <div className=" w-full bg-transparent fixed top-5 z-10">
-            <nav className="flex w-11/12  items-center justify-between flex-wrap px-6 mx-auto py-2 z-10 bg-gray-300/95 rounded-2xl">
+            <nav className="flex w-11/12  items-center justify-between flex-wrap px-6 mx-auto py-2 z-10 bg-gray-300/95 backdrop-blur-sm rounded-2xl">
                     <div className=" w-1/3 flex">
                         <motion.div whileHover={{ scaleY: [1, 1.2, 1]}} transition={{duration:0.4}}>
                             <Link href='/'>

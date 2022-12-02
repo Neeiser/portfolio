@@ -7,12 +7,14 @@ module.exports = {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        'bgMainRed': "url('../public/assets/img/layered-waves-haikei.svg')",
+      },
       colors: {
-        orangeOW: '#f99e1a',
-        grayOW: '#43484c',
-        blueOW: '#405275',
-        lightBlueOW: '#218ffe',
-        blackOW:'#181818'
+        orangeOW: '#FE6235',
+        grayOW: '#6E6D72',
+        whiteOW: '#FBFCFE',
+        blackOW:'#1A1D26'
       },
       fontFamily:{
         

@@ -1,12 +1,45 @@
+//VANTA.JS
+import { useEffect, useRef, useState } from "react";
+import FOG from "vanta/dist/vanta.fog.min";
+import * as THREE from "three";
+
+//FRAMER MOTION
 import { motion } from "framer-motion";
 
 //COMPONENTS
 import Link from "next/link";
 
 export default function Home() {
+  const [vantaEffect, setVantaEffect] = useState(0);
+  const vantaRef = useRef(null);
+  useEffect(() => {
+    if (!vantaEffect) {
+      setVantaEffect(
+        FOG({
+          el: vantaRef.current,
+          THREE: THREE,
+          mouseControls: true,
+          touchControls: true,
+          gyroControls: false,
+          minHeight: 200.00,
+          minWidth: 200.00,
+          highlightColor: 0xe1994e,
+          midtoneColor: 0x913a04,
+          lowlightColor: 0xb666fc,
+          baseColor: 0x50000,
+          blurFactor: 0.70,
+          speed: 2.00,
+          zoom: 0.80
+        })
+      );
+    }
+    return () => {
+      if (vantaEffect) vantaEffect.destroy();
+    };
+  }, [vantaEffect]);
   return (
     <div>
-      <main className=' bg-fixed bg-bgMainRed'>
+      <main ref={vantaRef} className=' bg-fixed z-0'>
         <section className='h-screen relative'>
           <div className='h-screen flex'>
             <div className='w-full flex flex-col justify-center items-center text-gray-200'>
@@ -47,11 +80,11 @@ export default function Home() {
           </div>
         </section>
 
-        <section className='h-screen z-0' id="about">
+        <section className='h-screen z-10' id="about">
           <div className="w-11/12 h-full flex justify-between mx-auto gap-8">
-            <div className=" my-auto backdrop-blur-sm bg-gray-300/50 h-1/3 w-4/12 rounded-xl hover:h-2/3 transition-all overflow-hidden"></div>
-            <div className=" my-auto backdrop-blur-sm bg-gray-300/50 h-1/3 w-4/12 rounded-xl hover:h-2/3 transition-all overflow-hidden"></div>
-            <div className=" my-auto backdrop-blur-sm bg-gray-300/50 h-1/3 w-4/12 rounded-xl hover:h-2/3 transition-all overflow-hidden"></div>
+            <div className=" my-auto backdrop-blur-sm bg-gray-300/30 h-1/3 w-4/12 rounded-xl hover:h-2/3 transition-all overflow-hidden"></div>
+            <div className=" my-auto backdrop-blur-sm bg-gray-300/30 h-1/3 w-4/12 rounded-xl hover:h-2/3 transition-all overflow-hidden"></div>
+            <div className=" my-auto backdrop-blur-sm bg-gray-300/30 h-1/3 w-4/12 rounded-xl hover:h-2/3 transition-all overflow-hidden"></div>
           </div>
         </section>
 

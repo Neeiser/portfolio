@@ -8,7 +8,7 @@ import LinkedIn from "../public/assets/logos/social/icons8-linkedin-circled-250.
 
 export default function Contact() {
     return (
-        <section className='h-full relative bg-bgMain'>
+        <section className='h-full relative bg-[conic-gradient(at_top_left,_var(--tw-gradient-stops))] from-gray-700 via-gray-900 to-black'>
             <div className="flex flex-col h-full w-full justify-center pt-40">
                 <form action="https://formsubmit.co/stortini.work@gmail.com" method="POST">
                     <div className="flex flex-col w-2/4 p-12 mx-auto bg-gray-300/50 rounded-3xl shadow-xl backdrop-blur-sm">

@@ -25,7 +25,7 @@ export default function Navbar() {
                         <Link href='/works'>Works</Link>
                     </motion.li>
                     <motion.li whileHover={{ scale: 1.2}} className='mx-8 hover:text-orange-500 border-b-4 border-t-4 border-transparent hover:border-b-orange-500 transition-colors'>
-                        <Link href='/cv'>Timeline</Link>
+                        <Link href='/timeline'>Timeline</Link>
                     </motion.li>
                 </ul>
                 <div className="w-1/3 flex  justify-end">

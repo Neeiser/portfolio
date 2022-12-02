@@ -1,16 +1,16 @@
 ﻿
 //VANTA.JS
 import { useEffect, useRef, useState,  } from "react";
-import BIRDS from "vanta/dist/vanta.birds.min";
+import WAVES from "vanta/dist/vanta.waves.min";
 import * as THREE from "three";
 
-export default function Works() {
+export default function Timeline() {
   const [vantaEffect, setVantaEffect] = useState(0);
   const vantaRef = useRef(null);
   useEffect(() => {
     if (!vantaEffect) {
       setVantaEffect(
-        BIRDS({
+        WAVES({
             el: vantaRef.current,
             THREE: THREE,
             mouseControls: true,
@@ -20,10 +20,11 @@ export default function Works() {
             minWidth: 200.00,
             scale: 1.00,
             scaleMobile: 1.00,
-            backgroundColor: 0x121214,
-            colorMode: "lerp",
-            birdSize: 4.00,
-            quantity: 1.00
+            color: 0x121214,
+            shininess: 37.00,
+            waveHeight: 40.00,
+            waveSpeed: 0.30,
+            zoom: 0.85
         })
       );
     }

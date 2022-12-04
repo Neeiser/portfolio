@@ -38,6 +38,10 @@ export default function Contact() {
                             </div>
                         </motion.div>
 
+                        <input type="hidden" name="_captcha" value="false"></input>
+
+                        <input type="hidden" name="_next" value="http://localhost:3000/"></input>
+
                         <motion.div animate={{ x: 0, opacity: 1}} initial={{ x: 200, opacity: 0}} transition={{ delay: 0.8}}  className="flex mx-auto py-6">
                             <motion.button whileHover={{ scale: 1.1}} whileTap={{ scale: 0.8}} className=" w-full focus:outline-none text-white bg-gradient-to-r hover:bg-gradient-to-br from-gray-500 via-gray-600 to-gray-700 hover:from-orange-500 hover:via-orange-600 hover:to-orange-700 shadow-md hover:shadow-orange-700 font-medium rounded-lg text-sm px-5 py-2.5 text-center" type="submit">
                                 Send

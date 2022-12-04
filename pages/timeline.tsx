@@ -1,4 +1,6 @@
-﻿
+﻿//FRAMER MOTION
+import { motion } from "framer-motion";
+
 //VANTA.JS
 import { useEffect, useRef, useState,  } from "react";
 import WAVES from "vanta/dist/vanta.waves.min";
@@ -33,6 +35,19 @@ export default function Timeline() {
     };
   }, [vantaEffect]);
   return (
-        <div className="h-screen" ref={vantaRef}></div>
+    <div>
+    <main ref={vantaRef} className=' z-0'>
+      <section className='h-screen relative'>
+        <div className='h-screen flex'>
+
+        </div>
+      </section>
+
+      <section className='h-screen' id="about">
+        
+      </section>
+
+    </main>
+  </div>
     );
 }

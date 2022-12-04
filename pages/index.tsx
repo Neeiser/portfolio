@@ -39,7 +39,7 @@ export default function Home() {
   }, [vantaEffect]);
   return (
     <div>
-      <main ref={vantaRef} className=' bg-fixed z-0'>
+      <main ref={vantaRef} className='z-0'>
         <section className='h-screen relative'>
           <div className='h-screen flex'>
             <div className='w-full flex flex-col justify-center items-center text-gray-200'>
@@ -49,7 +49,7 @@ export default function Home() {
                 <motion.div whileHover={{ y: -10, color: "orange" }}>,</motion.div>
                 <motion.div>&nbsp;</motion.div>
                 <motion.div whileHover={{ y: -10, color: "orange" }}>I</motion.div>
-                <motion.div whileHover={{ y: -10, color: "orange" }}>'</motion.div>
+                <motion.div whileHover={{ y: -10, color: "orange" }}>&apos;</motion.div>
                 <motion.div whileHover={{ y: -10, color: "orange" }}>m</motion.div>
                 <motion.div>&nbsp;</motion.div>
                 <motion.div whileHover={{ y: -10, color: "orange" }}>S</motion.div>

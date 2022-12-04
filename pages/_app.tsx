@@ -15,7 +15,7 @@ export default function App({ Component, pageProps }: AppProps) {
     threeScript.setAttribute("id", "threeScript");
     threeScript.setAttribute(
       "src",
-      "https://cdnjs.cloudflare.com/ajax/libs/three.js/r122/three.min.js"
+      "https://cdnjs.cloudflare.com/ajax/libs/three.js/0.147.0/three.min.js"
     );
     document.getElementsByTagName("head")[0].appendChild(threeScript);
     return () => {
@@ -36,12 +36,6 @@ export default function App({ Component, pageProps }: AppProps) {
         <Component {...pageProps} />
       </Layout>
 
-      <footer className='h-10 bg-black'>
-        <div className='flex h-full justify-center items-center text-gray-500'>
-          <p>Designed & Built by Stefano Stortini (Neeiser)</p>
-          <p> © 2022</p>
-        </div>
-      </footer>
     </div>
   )
 }

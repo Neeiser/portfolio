@@ -1,4 +1,6 @@
-﻿//FRAMER MOTION
+﻿import Footer from "../components/Footer";
+
+//FRAMER MOTION
 import { motion, useAnimation } from "framer-motion";
 
 //VANTA.JS
@@ -8,151 +10,135 @@ import * as THREE from "three";
 
 export default function Timeline() {
 
-  const [vantaEffect, setVantaEffect] = useState(0);
-  const vantaRef = useRef(null);
-  useEffect(() => {
-    if (!vantaEffect) {
-      setVantaEffect(
-        WAVES({
-            el: vantaRef.current,
-            THREE: THREE,
-            mouseControls: true,
-            touchControls: true,
-            gyroControls: false,
-            minHeight: 200.00,
-            minWidth: 200.00,
-            scale: 1.00,
-            scaleMobile: 1.00,
-            color: 0x121214,
-            shininess: 37.00,
-            waveHeight: 40.00,
-            waveSpeed: 0.30,
-            zoom: 0.85
-        })
-      );
-    }
-    return () => {
-      if (vantaEffect) vantaEffect.destroy();
-    };
-  }, [vantaEffect]);
-  return (
-    
-    <div>
-      <main ref={vantaRef} className='z-0'>
-        <section className='h-screen relative'>
+	const [vantaEffect, setVantaEffect] = useState(0);
+	const vantaRef = useRef(null);
+	useEffect(() => {
+		if (!vantaEffect) {
+			setVantaEffect(
+				WAVES({
+					el: vantaRef.current,
+					THREE: THREE,
+					mouseControls: true,
+					touchControls: true,
+					gyroControls: false,
+					minHeight: 200.00,
+					minWidth: 200.00,
+					scale: 1.00,
+					scaleMobile: 1.00,
+					color: 0x121214,
+					shininess: 37.00,
+					waveHeight: 40.00,
+					waveSpeed: 0.30,
+					zoom: 0.85
+				})
+			);
+		}
+		return () => {
+			if (vantaEffect) vantaEffect.destroy();
+		};
+	}, [vantaEffect]);
+	return (
+		<div>
+			<main ref={vantaRef} className='z-0'>
+				<section className='h-screen relative'>
+					<div className='h-1/5 flex'></div>
+					<div className='h-4/5'>
+						<div className="h-1/2 w-full flex items-center">
+							{/* Spacing: */}
+							<div className="h-3/4 w-1/5"></div>
+							<motion.div animate={{ x: 0, opacity: 1}} initial={{ x: -100, opacity: 0}} transition={{ delay: 0.7}} className="w-2/5 flex flex-col backdrop-blur-sm bg-orange-300/30 rounded-md p-8">
+								<div className="flex justify-between pb-4">
+								<h1 className="text-3xl font-semibold text-gray-300/95">VRtualize SRL</h1>
+								<span className="pl-4 justify-self-end font-semibold">08/2022 - 10/2022</span>
+								</div>
+								<p className=" italic font-semibold pb-6">Web Developer Full Stack</p>
+								<p>...</p>
+							</motion.div>
+							</div>
+							<div className="h-1/2 w-full flex items-center justify-end">
 
-          <div className='h-1/5 flex'></div>
+								<motion.div animate={{ x: 0, opacity: 1}} initial={{ x: 100, opacity: 0}} transition={{ delay: 0.9}} className="w-2/5 flex flex-col backdrop-blur-sm bg-orange-300/30 rounded-md p-8">
+									<div className="flex justify-between pb-4">
+									<h1 className="text-3xl font-semibold text-gray-300/95">Boolean</h1>
+									<span className="pl-4 justify-self-end font-semibold">01/2022 - 06/2022</span>
+									</div>
+									<p className=" italic font-semibold pb-6">Full Stack Web Developer Trainee</p>
+									<p>Corso Full-time di 6 mesi che spazia da linguaggi e tecnologie di frontend (HTML-CSS-JS-Vue.js) a backend (PHP, Laravel, SQL).</p>
+									<p>Lavori in gruppo e utilizzo di Github con merging e gestione repository.</p>
+								</motion.div>
 
-          <div className='h-4/5'>
-            <div className="h-1/2 w-full flex items-center">
+								{/* Spacing: */}
+							<div className="h-3/4 w-1/5"></div>
 
-              {/* Spacing: */}
-              <div className="h-3/4 w-1/5"></div>
+						</div>
+					</div>
+				</section>
 
-              <motion.div animate={{ x: 0, opacity: 1}} initial={{ x: -100, opacity: 0}} transition={{ delay: 0.7}} className="w-2/5 flex flex-col backdrop-blur-sm bg-orange-300/30 rounded-md p-8">
-                <div className="flex justify-between pb-4">
-                  <h1 className="text-3xl font-semibold text-gray-300/95">VRtualize SRL</h1>
-                  <span className="pl-4 justify-self-end font-semibold">08/2022 - 10/2022</span>
-                </div>
-                <p className=" italic font-semibold pb-6">Web Developer Full Stack</p>
-                <p>...</p>
-              </motion.div>
-              
-            </div>
-            <div className="h-1/2 w-full flex items-center justify-end">
+				<section className='h-screen relative'>
+					<div className='h-4/5'>
+						<div className="h-1/2 w-full flex items-center">
+							{/* Spacing: */}
+							<div className="h-3/4 w-1/5"></div>
+					
+							<motion.div
+							initial="hidden"
+							whileInView="visible"
+							viewport={{ once: true }}
+							transition={{ duration: 0.3, delay: 0.6 }}
+							variants={{
+								visible: { opacity: 1, x: 0 },
+								hidden: { opacity: 0, x: 100 }
+							}} 
+							className="w-2/5 flex flex-col backdrop-blur-sm bg-gray-300/30 rounded-md p-8">
+								<div className="flex justify-between pb-4">
+									<h1 className="text-3xl font-semibold text-gray-300/95">Impiegato Amministrazione</h1>
+									<span className="pl-4 justify-self-end font-semibold">03/2020 - 08/2020</span>
+								</div>
+								<p className=" italic font-semibold pb-6">Autofficina Peugeot (Varese)</p>
+								<ul className="list-disc ml-6">
+									<li>Impiegato Amministrativo</li>
+									<li>Gestione Informatica</li>
+									<li>Lavori di Grafica</li>  
+								</ul>
+							</motion.div>
 
-              <motion.div animate={{ x: 0, opacity: 1}} initial={{ x: 100, opacity: 0}} transition={{ delay: 0.9}} className="w-2/5 flex flex-col backdrop-blur-sm bg-orange-300/30 rounded-md p-8">
-                <div className="flex justify-between pb-4">
-                  <h1 className="text-3xl font-semibold text-gray-300/95">Boolean</h1>
-                  <span className="pl-4 justify-self-end font-semibold">01/2022 - 06/2022</span>
-                </div>
-                <p className=" italic font-semibold pb-6">Full Stack Web Developer Trainee</p>
-                <p>Corso Full-time di 6 mesi che spazia da linguaggi e tecnologie di frontend (HTML-CSS-JS-Vue.js) a backend (PHP, Laravel, SQL).</p>
-                <p>Lavori in gruppo e utilizzo di Github con merging e gestione repository.</p>
-              </motion.div>
+						</div>
+						<div className="h-1/2 w-full flex items-center justify-end">
 
-              {/* Spacing: */}
-              <div className="h-3/4 w-1/5"></div>
+							<motion.div
+							initial="hidden"
+							whileInView="visible"
+							viewport={{ once: true }}
+							transition={{ duration: 0.3, delay: 0.6 }}
+							variants={{
+								visible: { opacity: 1, x: 0 },
+								hidden: { opacity: 0, x: -100 }
+							}} 
+							className="w-2/5 flex flex-col backdrop-blur-sm bg-gray-300/30 rounded-md p-8">
+								<div className="flex justify-between pb-4">
+									<h1 className="text-3xl font-semibold text-gray-300/95">Data Entry - Gestione Dati</h1>
+									<span className="pl-4 justify-self-end font-semibold">2014 - 2018</span>
+								</div>
+								<p className=" italic font-semibold pb-6">Themis - Gorla Maggiore (VA)</p>
+								<p>Azienda di recupero materiali plastici e riciclo.</p>
+								<ul className="list-disc ml-6">
+									<li>Data Entry</li>
+									<li>Gestione Dati</li>
+									<li>Gestione Documentazione</li>  
+								</ul>
+							</motion.div>
 
-            </div>
-          </div>
+							{/* Spacing: */}
+							<div className="h-3/4 w-1/5"></div>
 
-        </section>
+						</div>
+					</div>
 
-        <section className='h-screen relative'>
+					<div className='h-1/5 flex'></div>
 
-          <div className='h-4/5'>
-            <div className="h-1/2 w-full flex items-center">
-
-              {/* Spacing: */}
-              <div className="h-3/4 w-1/5"></div>
-                
-              <motion.div
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true }}
-              transition={{ duration: 0.3, delay: 0.6 }}
-              variants={{
-                visible: { opacity: 1, x: 0 },
-                hidden: { opacity: 0, x: 100 }
-              }} 
-              className="w-2/5 flex flex-col backdrop-blur-sm bg-gray-300/30 rounded-md p-8">
-                <div className="flex justify-between pb-4">
-                  <h1 className="text-3xl font-semibold text-gray-300/95">Impiegato Amministrazione</h1>
-                  <span className="pl-4 justify-self-end font-semibold">03/2020 - 08/2020</span>
-                </div>
-                <p className=" italic font-semibold pb-6">Autofficina Peugeot (Varese)</p>
-                <ul className="list-disc ml-6">
-                  <li>Impiegato Amministrativo</li>
-                  <li>Gestione Informatica</li>
-                  <li>Lavori di Grafica</li>  
-                </ul>
-              </motion.div>
-
-            </div>
-            <div className="h-1/2 w-full flex items-center justify-end">
-
-              <motion.div
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true }}
-              transition={{ duration: 0.3, delay: 0.6 }}
-              variants={{
-                visible: { opacity: 1, x: 0 },
-                hidden: { opacity: 0, x: -100 }
-              }} 
-              className="w-2/5 flex flex-col backdrop-blur-sm bg-gray-300/30 rounded-md p-8">
-                <div className="flex justify-between pb-4">
-                  <h1 className="text-3xl font-semibold text-gray-300/95">Data Entry - Gestione Dati</h1>
-                  <span className="pl-4 justify-self-end font-semibold">2014 - 2018</span>
-                </div>
-                <p className=" italic font-semibold pb-6">Themis - Gorla Maggiore (VA)</p>
-                <p>Azienda di recupero materiali plastici e riciclo.</p>
-                <ul className="list-disc ml-6">
-                  <li>Data Entry</li>
-                  <li>Gestione Dati</li>
-                  <li>Gestione Documentazione</li>  
-                </ul>
-              </motion.div>
-
-              {/* Spacing: */}
-              <div className="h-3/4 w-1/5"></div>
-
-            </div>
-          </div>
-
-          <div className='h-1/5 flex'></div>
-
-            <footer className=' z-10 h-10 bg-black'>
-              <div className='flex h-full justify-center items-center text-gray-500'>
-                <p>Designed & Built by Stefano Stortini (Neeiser)</p>
-                <p> © 2022</p>
-              </div>
-            </footer>
-
-        </section>
-
-      </main>
-  </div>
+				<Footer/>
+				</section>
+			</main>
+		</div>
     );
 }

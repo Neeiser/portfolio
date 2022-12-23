@@ -4,6 +4,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 //COMPONENTS
 import Head from 'next/head';
+import Navbar from '../components/Navbar';
 import Layout from '../components/Layout';
 import { useEffect } from "react";
 

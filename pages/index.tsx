@@ -41,8 +41,7 @@ export default function Home() {
     <div>
       <main ref={vantaRef} className='z-0'>
         <section className='h-screen relative'>
-          <div className='h-screen flex'>
-            <div className='w-full flex flex-col justify-center items-center text-gray-200'>
+            <div className='h-screen w-full flex flex-col justify-center items-center text-gray-200'>
               <motion.h1 animate={{ y: 0, opacity: 1}} initial={{ y: -100, opacity: 0}} transition={{ delay: 0.6}} className='py-5 text-8xl flex cursor-pointer'>
                 <motion.div whileHover={{ y: -10, color: "orange" }}>H</motion.div>
                 <motion.div whileHover={{ y: -10, color: "orange" }}>i</motion.div>
@@ -77,7 +76,6 @@ export default function Home() {
                 </Link>
               </motion.div>
             </div>
-          </div>
         </section>
 
         <section className='h-screen z-10' id="about">

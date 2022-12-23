@@ -42,7 +42,7 @@ export default function Works() {
   }, [vantaEffect]);
   return (
         <div className="h-screen z-0" ref={vantaRef}>
-          <div className="flex h-full mx-auto my-auto">
+          <div className="flex flex-col h-full mx-auto my-auto">
             <div className="flex h-4/5 justify-center flex-col w-6/12 mx-auto my-auto gap-12">
               
               <motion.div animate={{ x: 0, opacity: 1}} initial={{ x: -100, opacity: 0}} transition={{ delay: 0.7}} className=" py-6 flex backdrop-blur-sm bg-gray-300/30 w-full rounded-md">
@@ -51,7 +51,7 @@ export default function Works() {
                 </div>
                 <div className=" gap-2 flex flex-col">
                   <h1 className="text-3xl font-semibold text-gray-300/95">Certo</h1>
-                  <p className=" italic font-semibold">Landing page a scopo informativo realizzata con WordPress(CMS).</p>
+                  <p className=" italic font-semibold">Landing page realizzata con WordPress(CMS).</p>
                   <p>HTML, CSS, SCSS, Bootstrap, Javascript, PHP</p>
                   <div>
                     <a target="_blank" href="https://www.certoentertainment.com/" rel="noopener noreferrer" className="text-orangeOW">Link al sito</a>
@@ -74,6 +74,12 @@ export default function Works() {
               </motion.div>
 
             </div>
+            <footer className=' z-10 h-10 bg-black'>
+                <div className='flex h-full justify-center items-center text-gray-500'>
+                  <p>Designed & Built by Stefano Stortini (Neeiser)</p>
+                  <p> © 2022</p>
+                </div>
+            </footer>
           </div>
         </div>
     );

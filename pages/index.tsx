@@ -44,22 +44,22 @@ export default function Home() {
 				<section className='h-screen relative'>
 					<div className='h-screen w-full flex flex-col justify-center items-center text-gray-200'>
 						<motion.h1 animate={{ y: 0, opacity: 1}} initial={{ y: -100, opacity: 0}} transition={{ delay: 0.6}} className='py-5 text-8xl flex cursor-pointer'>
-							<motion.div whileHover={{ y: -10, color: "orange" }}>H</motion.div>
-							<motion.div whileHover={{ y: -10, color: "orange" }}>i</motion.div>
-							<motion.div whileHover={{ y: -10, color: "orange" }}>,</motion.div>
+							<motion.div className=" hover:text-orange-500 transition-colors" whileHover={{ y: -10 }}>H</motion.div>
+							<motion.div className=" hover:text-orange-500 transition-colors" whileHover={{ y: -10 }}>i</motion.div>
+							<motion.div className=" hover:text-orange-500 transition-colors" whileHover={{ y: -10 }}>,</motion.div>
 							<motion.div>&nbsp;</motion.div>
-							<motion.div whileHover={{ y: -10, color: "orange" }}>I</motion.div>
-							<motion.div whileHover={{ y: -10, color: "orange" }}>&apos;</motion.div>
-							<motion.div whileHover={{ y: -10, color: "orange" }}>m</motion.div>
+							<motion.div className=" hover:text-orange-500 transition-colors" whileHover={{ y: -10 }}>I</motion.div>
+							<motion.div className=" hover:text-orange-500 transition-colors" whileHover={{ y: -10 }}>&apos;</motion.div>
+							<motion.div className=" hover:text-orange-500 transition-colors" whileHover={{ y: -10 }}>m</motion.div>
 							<motion.div>&nbsp;</motion.div>
-							<motion.div whileHover={{ y: -10, color: "orange" }}>S</motion.div>
-							<motion.div whileHover={{ y: -10, color: "orange" }}>t</motion.div>
-							<motion.div whileHover={{ y: -10, color: "orange" }}>e</motion.div>
-							<motion.div whileHover={{ y: -10, color: "orange" }}>f</motion.div>
-							<motion.div whileHover={{ y: -10, color: "orange" }}>a</motion.div>
-							<motion.div whileHover={{ y: -10, color: "orange" }}>n</motion.div>
-							<motion.div whileHover={{ y: -10, color: "orange" }}>o</motion.div>
-							<motion.div whileHover={{ y: -10, color: "orange" }}>!</motion.div>
+							<motion.div className=" hover:text-orange-500 transition-colors" whileHover={{ y: -10 }}>S</motion.div>
+							<motion.div className=" hover:text-orange-500 transition-colors" whileHover={{ y: -10 }}>t</motion.div>
+							<motion.div className=" hover:text-orange-500 transition-colors" whileHover={{ y: -10 }}>e</motion.div>
+							<motion.div className=" hover:text-orange-500 transition-colors" whileHover={{ y: -10 }}>f</motion.div>
+							<motion.div className=" hover:text-orange-500 transition-colors" whileHover={{ y: -10 }}>a</motion.div>
+							<motion.div className=" hover:text-orange-500 transition-colors" whileHover={{ y: -10 }}>n</motion.div>
+							<motion.div className=" hover:text-orange-500 transition-colors" whileHover={{ y: -10 }}>o</motion.div>
+							<motion.div className=" hover:text-orange-500 transition-colors" whileHover={{ y: -10 }}>!</motion.div>
 						</motion.h1>
 						<motion.p animate={{ y: 0, opacity: 1}} initial={{ y: -100, opacity: 0}} transition={{ delay: 0.7}} className='py-3 text-gray-400 text-xl font-semibold cursor-default'>Web Developer Full Stack Jr.</motion.p>
 						<motion.div animate={{ y: 0, opacity: 1}} initial={{ y: -100, opacity: 0}} transition={{ delay: 0.8}}>

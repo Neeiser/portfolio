@@ -1,4 +1,9 @@
-﻿import { motion } from "framer-motion";
+﻿//VANTA.JS
+import { useEffect, useRef, useState } from "react";
+import FOG from "vanta/dist/vanta.fog.min";
+import * as THREE from "three";
+
+import { motion } from "framer-motion";
 
 import Link from "next/link"
 import Footer from "../components/Footer";
@@ -8,8 +13,35 @@ import GitHub from "../public/assets/logos/social/icons8-github-250.png"
 import LinkedIn from "../public/assets/logos/social/icons8-linkedin-circled-250.png"
 
 export default function Contact() {
+    const [vantaEffect, setVantaEffect] = useState(0);
+	const vantaRef = useRef(null);
+	useEffect(() => {
+		if (!vantaEffect) {
+			setVantaEffect(
+				FOG({
+				el: vantaRef.current,
+				THREE: THREE,
+				mouseControls: true,
+				touchControls: true,
+				gyroControls: false,
+				minHeight: 200.00,
+				minWidth: 200.00,
+				highlightColor: 0xe1994e,
+				midtoneColor: 0x913a04,
+				lowlightColor: 0xb666fc,
+				baseColor: 0x50000,
+				blurFactor: 0.70,
+				speed: 2.00,
+				zoom: 0.80
+				})
+			);
+		}
+		return () => {
+			if (vantaEffect) vantaEffect.destroy();
+		};
+	}, [vantaEffect]);
     return (
-        <section className='h-full relative bg-[conic-gradient(at_top_left,_var(--tw-gradient-stops))] from-gray-700 via-gray-900 to-black'>
+        <section ref={vantaRef} className='h-full relative'>
             <div className="flex flex-col h-full w-full justify-center pt-40">
                 <form action="https://formsubmit.co/stortini.work@gmail.com" method="POST">
                     <div className="flex flex-col w-2/4 p-12 mx-auto bg-gray-300/50 rounded-3xl shadow-xl backdrop-blur-sm">

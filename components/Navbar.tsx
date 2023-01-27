@@ -24,17 +24,17 @@ export default function Navbar() {
 
 
     return (
-        <div className=" w-screen bg-transparent fixed top-5 z-10">
-            <div className="flex flex-col w-11/12 px-6 mx-auto py-2 z-10 bg-gray-300/95 backdrop-blur-sm rounded-2xl">
-                <nav className="flex w-full items-center justify-between flex-wrap">
-                    <div className="flex">
+        <div className=" w-full bg-transparent fixed top-5 z-10">
+            <div className="flex flex-col w-11/12 px-8 mx-auto py-4 z-10 bg-gray-300/95 backdrop-blur-sm rounded-2xl">
+                <nav className="flex w-full items-center justify-between">
+                    <div>
                         <motion.div whileHover={{ scaleY: [1, 1.2, 1]}} transition={{duration:0.4}}>
                             <Link href='/'>
                                 <Image src={Logo} alt="Logo Neeiser" width={64} height={64}/>
                             </Link>
                         </motion.div>
                     </div>
-                    <ul className="hidden sm:flex justify-center items-center font-semibold text-blackOW">
+                    <ul className="w-full hidden sm:flex justify-end items-center font-semibold text-blackOW tracking-wider gap-2">
                         <motion.li whileHover={{ scale: 1.2}} className='mx-8 hover:text-orange-500 border-b-4 border-t-4 border-transparent hover:border-b-orange-500 transition-colors'>
                             <Link href='/skills'>Skills</Link>
                         </motion.li>
@@ -46,7 +46,7 @@ export default function Navbar() {
                         </motion.li>
                         <div className="flex justify-end">
                             <Link href='/contact'>
-                                <motion.button whileHover={{ scale: 1.1}} whileTap={{ scale: 0.8}} type="button" className=" text-white bg-gradient-to-r hover:bg-gradient-to-br from-gray-500 via-gray-600 to-gray-700 hover:from-orange-500 hover:via-orange-600 hover:to-orange-700 shadow-md hover:shadow-orange-700 font-medium rounded-lg text-sm px-5 py-2.5 text-center">
+                                <motion.button whileHover={{ scale: 1.1}} whileTap={{ scale: 0.8}} type="button" className=" text-white bg-gradient-to-r hover:bg-gradient-to-br from-gray-500 via-gray-600 to-gray-700 hover:from-orange-500 hover:via-orange-600 hover:to-orange-700 shadow-md hover:shadow-orange-700 font-medium rounded-lg text-sm px-5 py-2.5 text-center tracking-wider">
                                     Contact me
                                 </motion.button>
                             </Link>

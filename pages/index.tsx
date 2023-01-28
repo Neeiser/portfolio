@@ -9,7 +9,7 @@ import { motion } from "framer-motion";
 //COMPONENTS
 import Link from "next/link";
 import Footer from "../components/Footer";
-import DropdownIndex from "../components/indexComponents/dropdown";
+import Collapsible from 'react-collapsible';
 
 export default function Home() {
 	const [vantaEffect, setVantaEffect] = useState(0);
@@ -120,10 +120,39 @@ export default function Home() {
 				</section>
 
 				<section className='h-screen z-10' id="about">
-					<div className="w-11/12 h-full flex justify-between mx-auto gap-8">
-						<DropdownIndex/>
-						<DropdownIndex/>
-						<DropdownIndex/>
+					<div className="w-11/12 h-full flex flex-col md:flex-row justify-between mx-auto gap-8">
+						<div className=" h-1/2 flex flex-col md:flex-row my-auto gap-8">
+							<Collapsible
+								trigger={<button className=" w-full px-4 py-2 text-lg font-medium text-indigo-600 bg-indigo-100 hover:bg-indigo-50 hover:text-indigo-800">Start here</button>}
+								transitionTime={100}
+							>
+								<p className="flex bg-white">
+									This is the collapsible content. It can be any element or React
+									component you like.
+								</p>
+							</Collapsible>
+
+							<Collapsible
+								trigger={<button className=" w-full px-4 py-2 text-lg font-medium text-indigo-600 bg-indigo-100 hover:bg-indigo-50 hover:text-indigo-800">Start here</button>}
+								transitionTime={100}
+							>
+								<p className="flex bg-white">
+									This is the collapsible content. It can be any element or React
+									component you like.
+								</p>
+							</Collapsible>
+
+							<Collapsible
+								trigger={<button className=" w-full px-4 py-2 text-lg font-medium text-indigo-600 bg-indigo-100 hover:bg-indigo-50 hover:text-indigo-800">Start here</button>}
+								transitionTime={100}
+							>
+								<p className="flex bg-white">
+									This is the collapsible content. It can be any element or React
+									component you like.
+								</p>
+							</Collapsible>
+
+						</div>
 					</div>
 				</section>
 

@@ -9,6 +9,7 @@ import { motion } from "framer-motion";
 //COMPONENTS
 import Link from "next/link";
 import Footer from "../components/Footer";
+import DropdownIndex from "../components/indexComponents/dropdown";
 
 export default function Home() {
 	const [vantaEffect, setVantaEffect] = useState(0);
@@ -48,6 +49,8 @@ export default function Home() {
 			opacity: 0
 		}
 	}
+
+	
 
 	return (
     	<div>
@@ -98,8 +101,8 @@ export default function Home() {
 								<motion.p whileHover={{ y: -10 }}>!</motion.p> 
 							</motion.div>
 						</motion.h1>
-						<motion.p animate={{ y: 0, opacity: 1}} initial={{ y: -100, opacity: 0}} transition={{ delay: 2.0}} className='py-3 text-gray-400 text-base md:text-xl font-semibold cursor-default'>Web Developer Full Stack Jr.</motion.p>
-						<motion.div animate={{ y: 0, opacity: 1}} initial={{ y: -100, opacity: 0}} transition={{ delay: 2.1}}>
+						<motion.p animate={{ x: 0, opacity: 1}} initial={{ x: 100, opacity: 0}} transition={{ delay: 2.0}} className='py-3 text-gray-400 text-base md:text-xl font-semibold cursor-default'>Web Developer Full Stack Jr.</motion.p>
+						<motion.div animate={{ x: 0, opacity: 1}} initial={{ x: -100, opacity: 0}} transition={{ delay: 2.1}}>
 							<Link href='/contact'>
 								<motion.button whileHover={{ scale: 1.1}} whileTap={{ scale: 0.8}} type="button" className="my-8 text-white bg-gradient-to-r hover:bg-gradient-to-br from-gray-500 via-gray-600 to-gray-700 hover:from-orange-500 hover:via-orange-600 hover:to-orange-700 shadow-md hover:shadow-orange-700 font-medium rounded-lg text-sm px-5 py-2.5 text-center">
 									Contact me
@@ -118,9 +121,9 @@ export default function Home() {
 
 				<section className='h-screen z-10' id="about">
 					<div className="w-11/12 h-full flex justify-between mx-auto gap-8">
-						<div className=" my-auto backdrop-blur-sm bg-gray-300/30 h-1/3 w-4/12 rounded-xl hover:h-2/3 transition-all overflow-hidden"></div>
-						<div className=" my-auto backdrop-blur-sm bg-gray-300/30 h-1/3 w-4/12 rounded-xl hover:h-2/3 transition-all overflow-hidden"></div>
-						<div className=" my-auto backdrop-blur-sm bg-gray-300/30 h-1/3 w-4/12 rounded-xl hover:h-2/3 transition-all overflow-hidden"></div>
+						<DropdownIndex/>
+						<DropdownIndex/>
+						<DropdownIndex/>
 					</div>
 				</section>
 

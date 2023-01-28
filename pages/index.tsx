@@ -123,32 +123,35 @@ export default function Home() {
 					<div className="w-11/12 h-full flex mx-auto">
 						<div className=" h-1/2 flex flex-col md:flex-row my-auto gap-8">
 							<Collapsible
-								trigger={<button className=" w-full px-4 py-2 text-lg font-medium text-indigo-600 bg-indigo-100 hover:bg-indigo-50 hover:text-indigo-800">Start here</button>}
+								trigger={<button className=" w-full px-4 py-2 text-lg font-medium text-indigo-600 bg-indigo-100 hover:bg-indigo-50 hover:text-indigo-800">About Me</button>}
 								transitionTime={100}
 							>
 								<p className="flex bg-white">
-									This is the collapsible content. It can be any element or React
-									component you like.
+									Mi chiamo Stefano e sono un Web Developer con una forte focalizzazione verso il Front-End.
+									Ho iniziato ad interessarmi alla programmazione durante il mio percorso lavorativo/professionale e da allora non ho più smesso.
+									Sono fortemente orientate verso l'apprendimento continuo e la sperimentazione di nuove tecnologie.
 								</p>
 							</Collapsible>
 
 							<Collapsible
-								trigger={<button className=" w-full px-4 py-2 text-lg font-medium text-indigo-600 bg-indigo-100 hover:bg-indigo-50 hover:text-indigo-800">Start here</button>}
+								trigger={<button className=" w-full px-4 py-2 text-lg font-medium text-indigo-600 bg-indigo-100 hover:bg-indigo-50 hover:text-indigo-800">Figura Professionale</button>}
 								transitionTime={100}
 							>
 								<p className="flex bg-white">
-									This is the collapsible content. It can be any element or React
-									component you like.
+									Mi chiamo Stefano e sono uno sviluppatore di software con una forte passione per la programmazione e la tecnologia.
+									Ho iniziato ad interessarmi alla programmazione durante il mio percorso lavorativo/professionale e da allora non ho più smesso.
+									Sono fortemente orientate verso l'apprendimento continuo e la sperimentazione di nuove tecnologie.
 								</p>
 							</Collapsible>
 
 							<Collapsible
-								trigger={<button className=" w-full px-4 py-2 text-lg font-medium text-indigo-600 bg-indigo-100 hover:bg-indigo-50 hover:text-indigo-800">Start here</button>}
+								trigger={<button className=" w-full px-4 py-2 text-lg font-medium text-indigo-600 bg-indigo-100 hover:bg-indigo-50 hover:text-indigo-800">Hobby</button>}
 								transitionTime={100}
 							>
 								<p className="flex bg-white">
-									This is the collapsible content. It can be any element or React
-									component you like.
+									Mi chiamo Stefano e sono un Web Developer con una forte passione per la programmazione e la tecnologia.
+									Ho iniziato ad interessarmi alla programmazione durante il mio percorso lavorativo/professionale e da allora non ho più smesso.
+									Sono fortemente orientate verso l'apprendimento continuo e la sperimentazione di nuove tecnologie.
 								</p>
 							</Collapsible>
 

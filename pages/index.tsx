@@ -120,7 +120,7 @@ export default function Home() {
 				</section>
 
 				<section className='h-screen z-10' id="about">
-					<div className="w-11/12 h-full flex flex-col md:flex-row justify-between mx-auto gap-8">
+					<div className="w-11/12 h-full flex mx-auto">
 						<div className=" h-1/2 flex flex-col md:flex-row my-auto gap-8">
 							<Collapsible
 								trigger={<button className=" w-full px-4 py-2 text-lg font-medium text-indigo-600 bg-indigo-100 hover:bg-indigo-50 hover:text-indigo-800">Start here</button>}

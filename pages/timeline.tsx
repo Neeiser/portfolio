@@ -8,7 +8,7 @@ import { useEffect, useRef, useState,  } from "react";
 import WAVES from "vanta/dist/vanta.waves.min";
 import * as THREE from "three";
 
-export default function Timeline() {
+const Timeline = () => {
 
 	const [vantaEffect, setVantaEffect] = useState(0);
 	const vantaRef = useRef(null);
@@ -142,3 +142,5 @@ export default function Timeline() {
 		</div>
     );
 }
+
+export default Timeline;

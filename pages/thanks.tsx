@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 import Link from "next/link"
 import Footer from "../components/Footer";
 
-export default function Thanks() {
+const Thanks = () => {
 	const [vantaEffect, setVantaEffect] = useState(0);
 	const vantaRef = useRef(null);
 	useEffect(() => {
@@ -62,3 +62,5 @@ export default function Thanks() {
 		</div>
   	)
 }
+
+export default Thanks;

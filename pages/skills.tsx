@@ -33,7 +33,7 @@ import * as THREE from "three";
 //FRAMER MOTION
 import { motion } from "framer-motion";
 
-export default function Skills() {
+const Skills = () => {
 	const [vantaEffect, setVantaEffect] = useState(0);
 	const vantaRef = useRef(null);
 	useEffect(() => {
@@ -188,3 +188,5 @@ export default function Skills() {
 		</div>
 	);
 }
+
+export default Skills;

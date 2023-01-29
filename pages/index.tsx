@@ -9,9 +9,11 @@ import { motion } from "framer-motion";
 //COMPONENTS
 import Link from "next/link";
 import Footer from "../components/Footer";
+import Dropdown from "../components/Dropdown";
 import Collapsible from 'react-collapsible';
 
-export default function Home() {
+
+const Home = () => {
 	const [vantaEffect, setVantaEffect] = useState(0);
 	const vantaRef = useRef(null);
 	useEffect(() => {
@@ -40,23 +42,13 @@ export default function Home() {
 		};
 	}, [vantaEffect]);
 
-	const hoverVariants = {
-		hover: {
-			y: -10,
-		},
-		initial: {
-			y: -100,
-			opacity: 0
-		}
-	}
-
 	
 
 	return (
     	<div>
-			<main ref={vantaRef} className='z-0'>
-				<section className='h-screen relative'>
-					<div className='h-screen w-full flex flex-col justify-center items-center text-gray-200'>
+			<main ref={vantaRef} className='z-0 relative'>
+				<section className='h-screen'>
+					<div className='h-full w-full flex flex-col justify-center items-center text-gray-200'>
 						<motion.h1 className='py-5 text-5xl md:text-8xl flex cursor-pointer'>
 							<motion.div className=" hover:text-orange-500 transition-colors" animate={{ y: 0, opacity: 1}} initial={{ y: -100, opacity: 0}} transition={{ delay: 0.5}} >
 								<motion.p whileHover={{ y: -10 }}>H</motion.p> 
@@ -119,43 +111,9 @@ export default function Home() {
 					</div>
 				</section>
 
-				<section className='h-screen z-10' id="about">
-					<div className="w-11/12 h-full flex mx-auto">
-						<div className=" h-1/2 flex flex-col md:flex-row my-auto gap-8">
-							<Collapsible
-								trigger={<button className=" w-full px-4 py-2 text-lg font-medium text-indigo-600 bg-indigo-100 hover:bg-indigo-50 hover:text-indigo-800">About Me</button>}
-								transitionTime={100}
-							>
-								<p className="flex bg-white">
-									Mi chiamo Stefano e sono un Web Developer con una forte focalizzazione verso il Front-End.
-									Ho iniziato ad interessarmi alla programmazione durante il mio percorso lavorativo/professionale e da allora non ho più smesso.
-									Sono fortemente orientate verso l'apprendimento continuo e la sperimentazione di nuove tecnologie.
-								</p>
-							</Collapsible>
-
-							<Collapsible
-								trigger={<button className=" w-full px-4 py-2 text-lg font-medium text-indigo-600 bg-indigo-100 hover:bg-indigo-50 hover:text-indigo-800">Figura Professionale</button>}
-								transitionTime={100}
-							>
-								<p className="flex bg-white">
-									Mi chiamo Stefano e sono uno sviluppatore di software con una forte passione per la programmazione e la tecnologia.
-									Ho iniziato ad interessarmi alla programmazione durante il mio percorso lavorativo/professionale e da allora non ho più smesso.
-									Sono fortemente orientate verso l'apprendimento continuo e la sperimentazione di nuove tecnologie.
-								</p>
-							</Collapsible>
-
-							<Collapsible
-								trigger={<button className=" w-full px-4 py-2 text-lg font-medium text-indigo-600 bg-indigo-100 hover:bg-indigo-50 hover:text-indigo-800">Hobby</button>}
-								transitionTime={100}
-							>
-								<p className="flex bg-white">
-									Mi chiamo Stefano e sono un Web Developer con una forte passione per la programmazione e la tecnologia.
-									Ho iniziato ad interessarmi alla programmazione durante il mio percorso lavorativo/professionale e da allora non ho più smesso.
-									Sono fortemente orientate verso l'apprendimento continuo e la sperimentazione di nuove tecnologie.
-								</p>
-							</Collapsible>
-
-						</div>
+				<section className='h-screen z-10 relative' id="about">
+					<div className="h-full flex">
+						<Dropdown></Dropdown>
 					</div>
 				</section>
 
@@ -164,3 +122,4 @@ export default function Home() {
     	</div>
   	)
 }
+export default Home;

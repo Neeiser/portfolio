@@ -14,7 +14,7 @@ import * as THREE from "three";
 //FRAMER MOTION
 import { motion } from "framer-motion";
 
-export default function Works() {
+const Works = () => {
 	const [vantaEffect, setVantaEffect] = useState(0);
 	const vantaRef = useRef(null);
 	useEffect(() => {
@@ -80,3 +80,5 @@ export default function Works() {
 		</div>
     );
 }
+
+export default Works;

@@ -7,7 +7,7 @@ import Logo from "../public/assets/logos/brand/ghost.png"
 import Link from "next/link";
 import { useState, useEffect } from 'react';
 
-export default function Navbar() {
+const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     useEffect(() => {
@@ -22,8 +22,8 @@ export default function Navbar() {
         };
       }, [isOpen]);
 
+      return(
 
-    return (
         <div className=" w-full bg-transparent fixed top-5 z-10">
             <div className="flex flex-col w-11/12 px-8 mx-auto py-4 z-10 bg-gray-300/95 backdrop-blur-sm rounded-2xl">
                 <nav className="flex w-full items-center justify-between">
@@ -79,4 +79,5 @@ export default function Navbar() {
             </div>
         </div>
     )
-}
+};
+export default Navbar;

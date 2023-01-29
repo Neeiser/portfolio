@@ -44,7 +44,7 @@ export default function Contact() {
         <section ref={vantaRef} className='h-full relative'>
             <div className="flex flex-col h-full w-full justify-center pt-40">
                 <form action="https://formsubmit.co/stortini.work@gmail.com" method="POST">
-                    <div className="flex flex-col w-2/4 p-12 mx-auto bg-gray-300/50 rounded-3xl shadow-xl backdrop-blur-sm">
+                    <div className="flex flex-col w-11/12 lg:w-2/4 p-6 md:p-12 mx-auto bg-gray-300/50 rounded-3xl shadow-xl backdrop-blur-sm">
 
                         <motion.div animate={{ x: 0, opacity: 1}} initial={{ x: 200, opacity: 0}} transition={{ delay: 0.2}}  className=" w-full py-6">
                             <h1 className="text-2xl text-blackOW font-semibold pl-4">Name</h1>
@@ -73,7 +73,9 @@ export default function Contact() {
 
                         <input type="hidden" name="_captcha" value="false"></input>
 
-                        <input type="hidden" name="_next" value="http://localhost:3000/"></input>
+                        <input type="text" name="_honey" className="hidden"></input>
+
+                        <input type="hidden" name="_next" value="http://localhost:3000/thanks/"></input>
 
                         <motion.div animate={{ x: 0, opacity: 1}} initial={{ x: 200, opacity: 0}} transition={{ delay: 0.8}}  className="flex mx-auto py-6">
                             <motion.button whileHover={{ scale: 1.1}} whileTap={{ scale: 0.8}} className=" w-full focus:outline-none text-white bg-gradient-to-r hover:bg-gradient-to-br from-gray-500 via-gray-600 to-gray-700 hover:from-orange-500 hover:via-orange-600 hover:to-orange-700 shadow-md hover:shadow-orange-700 font-medium rounded-lg text-sm px-5 py-2.5 text-center" type="submit">
@@ -84,7 +86,7 @@ export default function Contact() {
                     </div>
                 </form>
 
-                <div className=" flex flex-col w-2/4 p-12 mx-auto">
+                <div className=" flex flex-col w-11/12 lg:w-2/4 p-6 md:p-12 mx-auto">
 
                     <motion.h1 animate={{ x: 0, opacity: 1}} initial={{ x: 200, opacity: 0}} transition={{ delay: 1}} className="text-2xl text-orangeOW py-6">Social & More...</motion.h1>
                     <motion.div animate={{ x: 0, opacity: 1}} initial={{ x: 200, opacity: 0}} transition={{ delay: 1.1}} className="flex gap-4">

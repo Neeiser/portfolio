@@ -18,7 +18,7 @@ const Dropdown = () => {
             >
                 <p className="flex bg-white p-6 text-white bg-gradient-to-t from-orange-400 via-orange-500 to-orange-600 rounded-br-md rounded-bl-md">
                 My name is Stefano and I am a Web Developer with a strong focus on Front-End. 
-                I first became interested in programming during my career path and since then I have never stopped. 
+                I first became interested in programming during my career path and since then I kept practicing and improving. 
                 I am strongly oriented towards continuous learning and experimenting with new technologies. 
                 I believe that a good Front-End programmer is someone who can combine artistic flair with a good dose of technical skills, and that is what I strive to achieve.
                 </p>
@@ -30,9 +30,9 @@ const Dropdown = () => {
                 open={openDropdown === 2}
             >
                 <p className="flex bg-white p-6 text-white bg-gradient-to-t from-indigo-400 via-indigo-500 to-indigo-600 rounded-br-md rounded-bl-md">
-                My passions revolve around all multimedia and artistic content. These activities allow me to express myself and develop my work in a creative and passionate way. 
+                My passions revolve around multimedia and artistic content. These activities allow me to express myself and develop my work in a creative and passionate way. 
                 In particular, video games have always fascinated me for their ability to combine art, technology and storytelling. 
-                This passion has had a significant impact on my work, inspiring me to experiment with new ideas and always strive to create engaging and immersive experiences for users.
+                This passion has a significant impact on my work, inspiring me to experiment with new ideas and always strive to create engaging and immersive experiences for users.
                 </p>
             </Collapsible>
 
@@ -44,8 +44,8 @@ const Dropdown = () => {
                 <p className="flex bg-white p-6 text-white bg-gradient-to-t from-pink-400 via-pink-500 to-pink-600 rounded-br-md rounded-bl-md">
                 In the future, I want to grow as a Front-End Web Developer. 
                 I always love discovering new things and improving my skills, so I will always strive to experiment with innovative technologies. 
-                But it's not just about technology, it's also important for me to understand user needs and create solutions that meet them. 
-                My main goal is to grow in both skills and knowledge, through the use of empathy and curiosity.
+                But it&apos;s not just about technology, it&apos;s also important for me to understand user&apos;s needs and create solutions that meet them. 
+                My main goal is to grow in both skills and knowledge through the use of empathy and curiosity.
                 </p>
             </Collapsible>			
         </div>

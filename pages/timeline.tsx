@@ -52,7 +52,7 @@ const Timeline = () => {
 										<span className="lg:pl-4 justify-self-end font-semibold">08/2022 - 10/2022</span>
 									</div>
 									<p className=" italic font-semibold pb-6">Web Developer Full Stack</p>
-									<p>...</p>
+									<p>Ho ricoperto il ruolo di front-end developer dove ho lavorato a stretto contatto con il team UI/UX. Ho seguito un mockup per produrre un sito web funzionale e ben progettato. <br /> Il sito prodotto è visionabile al Link nella sezione "Works".</p>
 								</motion.div>
 							</div>
 							<div className="h-1/2 w-full flex items-center justify-center lg:justify-end py-12 lg:py-20">

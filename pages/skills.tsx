@@ -61,92 +61,92 @@ const Skills = () => {
 		};
 	}, [vantaEffect]);
 	return (
-			<div className="z-0" ref={vantaRef}>
-				<div className="w-11/12 h-full flex flex-col lg:flex-row items-center justify-between py-48 mx-auto gap-8">
-					<motion.div 
-						initial="hidden"
-						whileInView="visible"
-						viewport={{ once: true }}
-						transition={{ duration: 0.3, delay: 0.6 }}
-						variants={{
-							visible: { opacity: 1, y: 0 },
-							hidden: { opacity: 0, y: -100 }
-						}} className="p-6 my-auto backdrop-blur-lg w-11/12 lg:w-1/3 rounded-xl">
-						<h1 className="pb-8 text-center text-3xl font-semibold text-gray-300/95">Front End</h1>
-						<div className="flex gap-4 flex-wrap justify-center">
+		<div className="z-0" ref={vantaRef}>
+			<div className="w-11/12 h-full flex flex-col lg:flex-row items-center justify-between py-48 mx-auto gap-8">
+				<motion.div 
+					initial="hidden"
+					whileInView="visible"
+					viewport={{ once: true }}
+					transition={{ duration: 0.3, delay: 0.6 }}
+					variants={{
+						visible: { opacity: 1, y: 0 },
+						hidden: { opacity: 0, y: -100 }
+					}} className="p-6 my-auto backdrop-blur-lg w-11/12 lg:w-1/3 rounded-xl">
+					<h1 className="pb-8 text-center text-3xl font-semibold text-gray-300/95">Front End</h1>
+					<div className="flex gap-4 flex-wrap justify-center">
 
-							<motion.div className="group flex relative" animate={{ y: 0, opacity: 1}} initial={{ y: -100, opacity: 0}} transition={{ delay: 0.7}}>
-								<Image width={110} height={110} src={html5} alt="html5 Icon"/>
-								<span className="group-hover:opacity-100 transition-opacity bg-gray-800 px-1 text-md text-gray-100 rounded-md absolute left-1/2 -translate-x-1/2 -translate-y-full opacity-0 m-4 mx-auto">HTML</span>
-							</motion.div>
+						<motion.div className="group flex relative" animate={{ y: 0, opacity: 1}} initial={{ y: -100, opacity: 0}} transition={{ delay: 0.7}}>
+							<Image width={110} height={110} src={html5} alt="html5 Icon"/>
+							<span className="group-hover:opacity-100 transition-opacity bg-gray-800 px-1 text-md text-gray-100 rounded-md absolute left-1/2 -translate-x-1/2 -translate-y-full opacity-0 m-4 mx-auto">HTML</span>
+						</motion.div>
 
-							<motion.div className="group flex relative"  animate={{ y: 0, opacity: 1}} initial={{ y: -100, opacity: 0}} transition={{ delay: 0.8}}>
-								<Image width={110} height={110} src={css} alt="css3 Icon"/>
-								<span className="group-hover:opacity-100 transition-opacity bg-gray-800 px-1 text-md text-gray-100 rounded-md absolute left-1/2 -translate-x-1/2 -translate-y-full opacity-0 m-4 mx-auto">CSS</span>
-							</motion.div>
+						<motion.div className="group flex relative"  animate={{ y: 0, opacity: 1}} initial={{ y: -100, opacity: 0}} transition={{ delay: 0.8}}>
+							<Image width={110} height={110} src={css} alt="css3 Icon"/>
+							<span className="group-hover:opacity-100 transition-opacity bg-gray-800 px-1 text-md text-gray-100 rounded-md absolute left-1/2 -translate-x-1/2 -translate-y-full opacity-0 m-4 mx-auto">CSS</span>
+						</motion.div>
 
-							<motion.div className="group flex relative" animate={{ y: 0, opacity: 1}} initial={{ y: -100, opacity: 0}} transition={{ delay: 0.9}}>
-								<Image width={110} height={110} src={sass} alt="sass Icon"/>
-								<span className="group-hover:opacity-100 transition-opacity bg-gray-800 px-1 text-md text-gray-100 rounded-md absolute left-1/2 -translate-x-1/2 -translate-y-full opacity-0 m-4 mx-auto">SASS</span>
-							</motion.div>
+						<motion.div className="group flex relative" animate={{ y: 0, opacity: 1}} initial={{ y: -100, opacity: 0}} transition={{ delay: 0.9}}>
+							<Image width={110} height={110} src={sass} alt="sass Icon"/>
+							<span className="group-hover:opacity-100 transition-opacity bg-gray-800 px-1 text-md text-gray-100 rounded-md absolute left-1/2 -translate-x-1/2 -translate-y-full opacity-0 m-4 mx-auto">SASS</span>
+						</motion.div>
 
-							<motion.div className="group flex relative" animate={{ y: 0, opacity: 1}} initial={{ y: -100, opacity: 0}} transition={{ delay: 1}}>
-								<Image width={110} height={110} src={bootstrap} alt="bootstrap Icon"/>
-								<span className="group-hover:opacity-100 transition-opacity bg-gray-800 px-1 text-md text-gray-100 rounded-md absolute left-1/2 -translate-x-1/2 -translate-y-full opacity-0 m-4 mx-auto">Bootstrap</span>
-							</motion.div>
+						<motion.div className="group flex relative" animate={{ y: 0, opacity: 1}} initial={{ y: -100, opacity: 0}} transition={{ delay: 1}}>
+							<Image width={110} height={110} src={bootstrap} alt="bootstrap Icon"/>
+							<span className="group-hover:opacity-100 transition-opacity bg-gray-800 px-1 text-md text-gray-100 rounded-md absolute left-1/2 -translate-x-1/2 -translate-y-full opacity-0 m-4 mx-auto">Bootstrap</span>
+						</motion.div>
 
-							<motion.div className="group flex relative" animate={{ y: 0, opacity: 1}} initial={{ y: -100, opacity: 0}} transition={{ delay: 1.1}}>
-								<Image width={110} height={110} src={tailwindcss} alt="tailwindcss Icon"/>
-								<span className="group-hover:opacity-100 transition-opacity bg-gray-800 px-1 text-md text-gray-100 rounded-md absolute left-1/2 -translate-x-1/2 -translate-y-full opacity-0 m-4 mx-auto">TailwindCSS</span>
-							</motion.div>
+						<motion.div className="group flex relative" animate={{ y: 0, opacity: 1}} initial={{ y: -100, opacity: 0}} transition={{ delay: 1.1}}>
+							<Image width={110} height={110} src={tailwindcss} alt="tailwindcss Icon"/>
+							<span className="group-hover:opacity-100 transition-opacity bg-gray-800 px-1 text-md text-gray-100 rounded-md absolute left-1/2 -translate-x-1/2 -translate-y-full opacity-0 m-4 mx-auto">TailwindCSS</span>
+						</motion.div>
 
-							<motion.div className="group flex relative" animate={{ y: 0, opacity: 1}} initial={{ y: -100, opacity: 0}} transition={{ delay: 1.2}}>
-								<Image width={110} height={110} src={three} alt="threejs Icon"/>
-								<span className="group-hover:opacity-100 transition-opacity bg-gray-800 px-1 text-md text-gray-100 rounded-md absolute left-1/2 -translate-x-1/2 -translate-y-full opacity-0 m-4 mx-auto">Three.js</span>
-							</motion.div>
+						<motion.div className="group flex relative" animate={{ y: 0, opacity: 1}} initial={{ y: -100, opacity: 0}} transition={{ delay: 1.2}}>
+							<Image width={110} height={110} src={three} alt="threejs Icon"/>
+							<span className="group-hover:opacity-100 transition-opacity bg-gray-800 px-1 text-md text-gray-100 rounded-md absolute left-1/2 -translate-x-1/2 -translate-y-full opacity-0 m-4 mx-auto">Three.js</span>
+						</motion.div>
 
-							<motion.div className="group flex relative" animate={{ y: 0, opacity: 1}} initial={{ y: -100, opacity: 0}} transition={{ delay: 1.3}}>
-								<Image width={110} height={110} src={framermotion} alt="framer-motion Icon"/>
-								<span className="group-hover:opacity-100 transition-opacity bg-gray-800 px-1 text-md text-gray-100 rounded-md absolute left-1/2 -translate-x-1/2 -translate-y-full opacity-0 m-4 mx-auto">Framer Motion</span>
-							</motion.div>
+						<motion.div className="group flex relative" animate={{ y: 0, opacity: 1}} initial={{ y: -100, opacity: 0}} transition={{ delay: 1.3}}>
+							<Image width={110} height={110} src={framermotion} alt="framer-motion Icon"/>
+							<span className="group-hover:opacity-100 transition-opacity bg-gray-800 px-1 text-md text-gray-100 rounded-md absolute left-1/2 -translate-x-1/2 -translate-y-full opacity-0 m-4 mx-auto">Framer Motion</span>
+						</motion.div>
 
-							<motion.div className="group flex relative" animate={{ y: 0, opacity: 1}} initial={{ y: -100, opacity: 0}} transition={{ delay: 1.4}}>
-								<Image width={110} height={110} src={javascript} alt="javascript Icon"/>
-								<span className="group-hover:opacity-100 transition-opacity bg-gray-800 px-1 text-md text-gray-100 rounded-md absolute left-1/2 -translate-x-1/2 -translate-y-full opacity-0 m-4 mx-auto">Javascript</span>
-							</motion.div>
+						<motion.div className="group flex relative" animate={{ y: 0, opacity: 1}} initial={{ y: -100, opacity: 0}} transition={{ delay: 1.4}}>
+							<Image width={110} height={110} src={javascript} alt="javascript Icon"/>
+							<span className="group-hover:opacity-100 transition-opacity bg-gray-800 px-1 text-md text-gray-100 rounded-md absolute left-1/2 -translate-x-1/2 -translate-y-full opacity-0 m-4 mx-auto">Javascript</span>
+						</motion.div>
 
-							<motion.div className="group flex relative" animate={{ y: 0, opacity: 1}} initial={{ y: -100, opacity: 0}} transition={{ delay: 1.5}}>
-								<Image width={110} height={110} src={typescript} alt="typescript Icon"/>
-								<span className="group-hover:opacity-100 transition-opacity bg-gray-800 px-1 text-md text-gray-100 rounded-md absolute left-1/2 -translate-x-1/2 -translate-y-full opacity-0 m-4 mx-auto">Typescript</span>
-							</motion.div>
+						<motion.div className="group flex relative" animate={{ y: 0, opacity: 1}} initial={{ y: -100, opacity: 0}} transition={{ delay: 1.5}}>
+							<Image width={110} height={110} src={typescript} alt="typescript Icon"/>
+							<span className="group-hover:opacity-100 transition-opacity bg-gray-800 px-1 text-md text-gray-100 rounded-md absolute left-1/2 -translate-x-1/2 -translate-y-full opacity-0 m-4 mx-auto">Typescript</span>
+						</motion.div>
 
-							<motion.div className="group flex relative" animate={{ y: 0, opacity: 1}} initial={{ y: -100, opacity: 0}} transition={{ delay: 1.6}}>
-								<Image width={110} height={110} src={vuejs} alt="vuejs Icon"/>
-								<span className="group-hover:opacity-100 transition-opacity bg-gray-800 px-1 text-md text-gray-100 rounded-md absolute left-1/2 -translate-x-1/2 -translate-y-full opacity-0 m-4 mx-auto">Vue.js</span>
-							</motion.div>
+						<motion.div className="group flex relative" animate={{ y: 0, opacity: 1}} initial={{ y: -100, opacity: 0}} transition={{ delay: 1.6}}>
+							<Image width={110} height={110} src={vuejs} alt="vuejs Icon"/>
+							<span className="group-hover:opacity-100 transition-opacity bg-gray-800 px-1 text-md text-gray-100 rounded-md absolute left-1/2 -translate-x-1/2 -translate-y-full opacity-0 m-4 mx-auto">Vue.js</span>
+						</motion.div>
 
-							<motion.div className="group flex relative" animate={{ y: 0, opacity: 1}} initial={{ y: -100, opacity: 0}} transition={{ delay: 1.7}}>
-								<Image width={110} height={110} src={react} alt="react Icon"/>
-								<span className="group-hover:opacity-100 transition-opacity bg-gray-800 px-1 text-md text-gray-100 rounded-md absolute left-1/2 -translate-x-1/2 -translate-y-full opacity-0 m-4 mx-auto">React</span>
-							</motion.div>
+						<motion.div className="group flex relative" animate={{ y: 0, opacity: 1}} initial={{ y: -100, opacity: 0}} transition={{ delay: 1.7}}>
+							<Image width={110} height={110} src={react} alt="react Icon"/>
+							<span className="group-hover:opacity-100 transition-opacity bg-gray-800 px-1 text-md text-gray-100 rounded-md absolute left-1/2 -translate-x-1/2 -translate-y-full opacity-0 m-4 mx-auto">React</span>
+						</motion.div>
 
-							<motion.div className="group flex relative" animate={{ y: 0, opacity: 1}} initial={{ y: -100, opacity: 0}} transition={{ delay: 1.8}}>
-								<Image width={110} height={110} src={nextjs} alt="nextjs Icon"/>
-								<span className="group-hover:opacity-100 transition-opacity bg-gray-800 px-1 text-md text-gray-100 rounded-md absolute left-1/2 -translate-x-1/2 -translate-y-full opacity-0 m-4 mx-auto">Next.js</span>
-							</motion.div>
+						<motion.div className="group flex relative" animate={{ y: 0, opacity: 1}} initial={{ y: -100, opacity: 0}} transition={{ delay: 1.8}}>
+							<Image width={110} height={110} src={nextjs} alt="nextjs Icon"/>
+							<span className="group-hover:opacity-100 transition-opacity bg-gray-800 px-1 text-md text-gray-100 rounded-md absolute left-1/2 -translate-x-1/2 -translate-y-full opacity-0 m-4 mx-auto">Next.js</span>
+						</motion.div>
 
-						</div>
-					</motion.div>
-					<motion.div initial="hidden"
-						whileInView="visible"
-						viewport={{ once: true }}
-						transition={{ duration: 0.3, delay: 0.6 }}
-						variants={{
-							visible: { opacity: 1, y: 0 },
-							hidden: { opacity: 0, y: -100 }
-						}} className=" p-6 my-auto backdrop-blur-lg w-11/12 lg:w-1/3 rounded-xl">
-						<h1 className="pb-8 text-center text-3xl font-semibold text-gray-300/95">Back End</h1>
-						<div className="flex gap-4 flex-wrap justify-center">
+					</div>
+				</motion.div>
+				<motion.div initial="hidden"
+					whileInView="visible"
+					viewport={{ once: true }}
+					transition={{ duration: 0.3, delay: 0.6 }}
+					variants={{
+						visible: { opacity: 1, y: 0 },
+						hidden: { opacity: 0, y: -100 }
+					}} className=" p-6 my-auto backdrop-blur-lg w-11/12 lg:w-1/3 rounded-xl">
+					<h1 className="pb-8 text-center text-3xl font-semibold text-gray-300/95">Back End</h1>
+					<div className="flex gap-4 flex-wrap justify-center">
 
 						<motion.div className="group flex relative"  animate={{ y: 0, opacity: 1}} initial={{ y: -100, opacity: 0}} transition={{ delay: 1}}>
 							<Image width={110} height={110} src={php} alt="php Icon"/>
@@ -205,7 +205,7 @@ const Skills = () => {
 					</div>
 				</motion.div>
 			</div>
-			<div className=" -mt-10">
+			<div className=" mt-7">
 				<Footer/>
 			</div>
 		</div>
